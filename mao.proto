@@ -1,0 +1,49 @@
+
+syntax = "proto3";
+
+option go_package = "/main";
+//option java_multiple_files = true;
+//option java_package = "com.maojianwei.grpc.bigmao";
+//option java_outer_classname = "MaoOut";
+
+package main;
+
+service Bigmao {
+  rpc QingdaoRequest(MaoRequestData) returns (MaoResponseData) {}
+}
+
+message GPS {
+  double latitude = 1;
+  double longitude = 2;
+}
+
+message MaoRequestData {
+  string rStr = 1;
+}
+
+message MaoResponseData {
+  uint32 count = 1;
+  GPS location = 2;
+}
+
+message MaoStreamDataA {
+  GPS loc_peer_A = 1;
+}
+
+message MaoStreamDataB {
+  GPS loc_peer_B = 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
