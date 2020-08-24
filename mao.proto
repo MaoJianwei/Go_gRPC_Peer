@@ -1,7 +1,8 @@
 
 syntax = "proto3";
 
-option go_package = "/main";
+option go_package = "grpc.maojianwei.com/api";
+//grpc.maojianwei.com/api
 //option java_multiple_files = true;
 //option java_package = "com.maojianwei.grpc.bigmao";
 //option java_outer_classname = "MaoOut";
