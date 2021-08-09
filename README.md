@@ -22,7 +22,7 @@ protoc   --go_out=Mgrpc/service_config/service_config.proto=/internal/proto/grpc
 apt install protobuf-compiler
 go get -u google.golang.org/protobuf/cmd/protoc-gen-go
 go get -u google.golang.org/grpc/cmd/protoc-gen-go-grpc
-添加路径到环境变量PATH：export PATH=$PATH:/usr/local/go/bin:%HOME/go/bin
+添加路径到环境变量PATH：export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 ```
 
 ### 设置 GO111MODULE
